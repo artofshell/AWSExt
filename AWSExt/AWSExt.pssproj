@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6CAFC0C6-A428-4d30-A9F9-700E829FEA51</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>AWSExt</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Completers\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Functions\Public\" />
+    <Folder Include="Functions\Private\" />
+    <Folder Include="Format Types\" />
+    <Folder Include="Aliases\" />
+    <Folder Include="Snippets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aliases\AWS.EC2.Aliases.json" />
+    <Compile Include="AWSExt.psd1" />
+    <Compile Include="AWSExt.psm1" />
+    <Compile Include="AWSExt.tests.ps1" />
+    <Compile Include="Completers\AWS.IAM.UserName.ArgumentCompleter.ps1" />
+    <Compile Include="Completers\AWS.IAM.GroupName.ArgumentCompleter.ps1" />
+    <Compile Include="Completers\AWS.R53Domains.DomainName.ArgumentCompleter.ps1" />
+    <Compile Include="Completers\AWS.EC2.InstanceId.ArgumentCompleter.ps1" />
+    <Compile Include="Completers\AWS.S3.BucketName.ArgumentCompleter.ps1" />
+    <Compile Include="appveyor.yml" />
+    <Compile Include="Snippets\aws-core-authenticate.snippets.ps1xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+</Project>
