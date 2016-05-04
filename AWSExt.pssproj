@@ -39,7 +39,6 @@
     <Compile Include="Aliases\AWS.EC2.Aliases.json" />
     <Compile Include="AWSExt.psd1" />
     <Compile Include="AWSExt.psm1" />
-    <Compile Include="AWSExt.tests.ps1" />
     <Compile Include="Completers\AWS.IAM.UserName.ArgumentCompleter.ps1" />
     <Compile Include="Completers\AWS.IAM.GroupName.ArgumentCompleter.ps1" />
     <Compile Include="Completers\AWS.R53Domains.DomainName.ArgumentCompleter.ps1" />
