@@ -46,7 +46,7 @@
     <Compile Include="Completers\AWS.EC2.InstanceId.ArgumentCompleter.ps1" />
     <Compile Include="Completers\AWS.S3.BucketName.ArgumentCompleter.ps1" />
     <Compile Include="appveyor.yml" />
-    <Compile Include="PatchModuleManifest.ps1" />
+    <Compile Include="Patch-ModuleManifest.ps1" />
     <Compile Include="Snippets\aws-core-authenticate.snippets.ps1xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
