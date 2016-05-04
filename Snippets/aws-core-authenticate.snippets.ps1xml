@@ -4,7 +4,7 @@
             <Header>
                 <Title>aws-core-authenticate</Title>
                 <Description>This snippet adds authentication for Amazon Web Services (AWS).</Description>
-                <Author>Trevor Sullivan &lt;trevor@trevorsullivan.net&gt;</Author>
+                <Author>Trevor Sullivan &lt;trevor@trevorsullivan.net</Author>
                 <SnippetTypes>
                     <SnippetType>Expansion</SnippetType>
                 </SnippetTypes>
